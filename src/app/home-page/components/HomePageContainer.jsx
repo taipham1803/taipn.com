@@ -78,8 +78,8 @@ const myWorks = [
             },
             {
                 id: 1,
-                title: 'Play Store',
-                link: 'https://play.google.com/store/apps/details?id=com.mylocal.vn',
+                title: 'Public Design',
+                link: 'https://scene.zeplin.io/project/6112dbd6774efe87df508345',
             },
         ],
     },
