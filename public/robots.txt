@@ -1,0 +1,8 @@
+Sitemap: https://howlcity.io/api/sitemap.xml
+User-agent: *
+Allow: /*
+
+# User agent "Googlebot" should not crawl the `http://example.com/nogooglebot/` folder or any of its subdirectories.
+User-agent: Googlebot
+Disallow: /nogooglebot/
+Disallow: /api/*
