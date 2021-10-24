@@ -53,7 +53,7 @@ const myWorks = [
         position: 'Mobile developer, UX/UI Designer',
         productName: 'BeeGuru Learning app',
         productDes:
-            'A new on-demand ride-hailing platform developed by scientists and engineers from VNU, designed for large scale business operations with sophisticated core technologies.',
+            'The application provides learning lessons for students from grades 1-12 in Vietnam, including many subjects such as math, physics, chemistry, English, ... in the form of written and audio articles.',
         buttons: [
             {
                 id: 0,
