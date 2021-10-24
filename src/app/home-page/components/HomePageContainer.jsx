@@ -148,7 +148,7 @@ const Home = () => {
             </div>
             <div className="flex flex-1 flex-col justify-start sm:justify-center mt-12 sm:mt-0 pl-0 sm:pl-9">
                 <div className="text-white text-center sm:text-left text-3xl sm:text-5xl font-thin pr-0 sm:pr-36 sm:leading-tight leading-snug">
-                    I love humanize digital user experience, design mobile/web
+                    I love humanize digital user experience, designing mobile/web
                     <br />
                     with <span className="font-bold">Figma</span>, build with{' '}
                     <span className="font-bold">
