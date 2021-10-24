@@ -49,7 +49,7 @@ const myWorks = [
     {
         image: images.beeguruCover,
         imageLink: 'https://apps.apple.com/vn/app/id1529227937',
-        companyName: 'Beeguru tech',
+        companyName: 'Beeguru',
         position: 'Mobile developer, UX/UI Designer',
         productName: 'BeeGuru Learning app',
         productDes:
@@ -64,7 +64,7 @@ const myWorks = [
     },
     {
         image: images.mylocalAsimCover,
-        imageLink: 'https://apps.apple.com/vn/app/id1543101669',
+        imageLink: 'https://scene.zeplin.io/project/6112dbd6774efe87df508345',
         companyName: 'Emddi',
         position: 'UI/UX Designer • Web App Developer',
         productName: 'MyLocal Taxi - ASIM',
@@ -148,7 +148,8 @@ const Home = () => {
             </div>
             <div className="flex flex-1 flex-col justify-start sm:justify-center mt-12 sm:mt-0 pl-0 sm:pl-9">
                 <div className="text-white text-center sm:text-left text-3xl sm:text-5xl font-thin pr-0 sm:pr-36 sm:leading-tight leading-snug">
-                    I love humanize digital user experience, designing mobile/web
+                    I love humanize digital user experience, designing
+                    mobile/web
                     <br />
                     with <span className="font-bold">Figma</span>, build with{' '}
                     <span className="font-bold">
@@ -221,16 +222,22 @@ const Works = () => {
                             'flex flex-col mt-6 sm:mt-16',
                             reverseStyle
                         )}>
-                        <img
+                        <a
+                            href={imageLink}
+                            target="_blank"
+                            rel="noreferrer"
                             className={classNames(
                                 imageStyle,
                                 marginStyle,
                                 hoverAnim,
                                 hoverScale
-                            )}
-                            alt="product-cover"
-                            src={image}
-                        />
+                            )}>
+                            <img
+                                className="flex flex-1"
+                                alt="product-cover"
+                                src={image}
+                            />
+                        </a>
                         <div className="flex flex-1 flex-col justify-center mt-4 sm:mt-0">
                             <div className="flex text-gray-1 text-center sm:text-left mt-4 sm:mt-0 font-bold text-xl">
                                 {`${companyName}  •  ${position}`}
