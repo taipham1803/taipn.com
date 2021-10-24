@@ -117,7 +117,7 @@ const myWorks = [
 ]
 
 const normalText =
-    'text-white text-sm sm:text-xl font-thin hover:font-semibold duration-300'
+    'text-white text-sm sm:text-xl font-light sm:font-thin hover:font-semibold duration-300'
 
 const Home = () => {
     return (
