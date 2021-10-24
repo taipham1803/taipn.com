@@ -12,8 +12,18 @@ const myWorks = [
         productName: 'Ride-hailing Taxi app',
         productDes:
             'A new on-demand ride-hailing platform developed by scientists and engineers from VNU, designed for large scale business operations with sophisticated core technologies.',
-        buttonTitle: 'AppStore',
-        buttonLink: '',
+        buttons: [
+            {
+                id: 0,
+                title: 'App Store',
+                link: 'https://apps.apple.com/vn/app/id1270094982',
+            },
+            {
+                id: 1,
+                title: 'Play Store',
+                link: 'https://play.google.com/store/apps/details?id=com.emddi.customer',
+            },
+        ],
     },
     {
         image: images.buttaLanding,
@@ -23,8 +33,18 @@ const myWorks = [
         productName: 'Buddhist Social Networking',
         productDes:
             'Butta is a social network for Vietnamese Buddhists, a place to learn, propagate Buddhism, and update information from the Vietnam Buddhist Sangha and around the world.',
-        buttonTitle: 'AppStore',
-        buttonLink: '',
+        buttons: [
+            {
+                id: 0,
+                title: 'App Store',
+                link: 'https://apps.apple.com/vn/app/id1502420086',
+            },
+            {
+                id: 1,
+                title: 'Play Store',
+                link: 'https://play.google.com/store/apps/details?id=com.buttatech.butta',
+            },
+        ],
     },
     {
         image: images.beeguruCover,
@@ -34,8 +54,13 @@ const myWorks = [
         productName: 'BeeGuru Learning app',
         productDes:
             'A new on-demand ride-hailing platform developed by scientists and engineers from VNU, designed for large scale business operations with sophisticated core technologies.',
-        buttonTitle: 'AppStore',
-        buttonLink: '',
+        buttons: [
+            {
+                id: 0,
+                title: 'App Store',
+                link: 'https://apps.apple.com/vn/app/id1529227937',
+            },
+        ],
     },
     {
         image: images.mylocalAsimCover,
@@ -45,8 +70,18 @@ const myWorks = [
         productName: 'MyLocal Taxi - ASIM',
         productDes:
             'Integrate taxi booking feature on MyLocal mobile app. This part is written in webapp NextJS and integrated into Flutter app',
-        buttonTitle: 'App Store',
-        buttonLink: '',
+        buttons: [
+            {
+                id: 0,
+                title: 'App Store',
+                link: 'https://apps.apple.com/vn/app/id1543101669',
+            },
+            {
+                id: 1,
+                title: 'Play Store',
+                link: 'https://play.google.com/store/apps/details?id=com.mylocal.vn',
+            },
+        ],
     },
     {
         image: images.heydriverCover,
@@ -56,8 +91,28 @@ const myWorks = [
         productName: 'Hey - Hey Driver',
         productDes:
             'Hey is an app to book an intercity car, airport taxis. You can schedule an appointment in advance, book the whole car or certain seats in the car, create a trip, the driver will search for a ride that matches their route and receive the ride.',
-        buttonTitle: 'App Store',
-        buttonLink: '',
+        buttons: [
+            {
+                id: 0,
+                title: 'Hey iOS',
+                link: 'https://apps.apple.com/vn/app/id1526440131',
+            },
+            {
+                id: 1,
+                title: 'Hey Android',
+                link: 'https://play.google.com/store/apps/details?id=com.emddi.xetienchuyen.customer',
+            },
+            {
+                id: 3,
+                title: 'Hey Driver iOS',
+                link: 'https://apps.apple.com/vn/app/id1526645448',
+            },
+            {
+                id: 4,
+                title: 'Hey Driver Android',
+                link: 'https://play.google.com/store/apps/details?id=com.emddi.xetienchuyen.driver',
+            },
+        ],
     },
 ]
 
@@ -100,24 +155,40 @@ const Home = () => {
                         React Native, ReactJS, NextJS, Flutter
                     </span>
                     <br />
-                    and want to try  <span className="font-bold">SwiftUI</span>
+                    and want to try <span className="font-bold">SwiftUI</span>
                 </div>
             </div>
             <div className="flex flex-row items-center ml-auto justify-center sm:justify-start w-full sm:w-auto">
-                <a href={'https://dribbble.com/taipham1803'} className={normalText}>{`dribbble`}</a>
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={'https://dribbble.com/taipham1803'}
+                    className={normalText}>{`dribbble`}</a>
                 <div className="text-white mx-2">|</div>
-                <a href={'https://github.com/taipham1803'} className={normalText}>{`github`}</a>
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={'https://github.com/taipham1803'}
+                    className={normalText}>{`github`}</a>
                 <div className="text-white mx-2">|</div>
-                <a href={'https://twitter.com/heyry_pro'} className={normalText}>{`twitter`}</a>
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={'https://twitter.com/heyry_pro'}
+                    className={normalText}>{`twitter`}</a>
                 <div className="text-white mx-2">|</div>
-                <a href={'https://www.linkedin.com/in/tai-pham-dev'} className={normalText}>{`linkedin`}</a>
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={'https://www.linkedin.com/in/tai-pham-dev'}
+                    className={normalText}>{`linkedin`}</a>
             </div>
         </div>
     )
 }
 
 const imageStyle =
-    'flex flex-1 h-96 mr-0 sm:mr-12 rounded-2xl shadow-xl transform hover:-translate-y-2'
+    'flex flex-1 sm:w-72 md:w-88 lg:w-96 sm:h-48 md:h-56 lg:h-72 xl:h-96 mr-0 rounded-2xl shadow-xl transform hover:-translate-y-2'
 const hoverTransition = 'transition ease-in-out'
 const hoverScale = 'hover:scale-102'
 const hoverAnim = 'duration-500 transform hover:-translate-y-2'
@@ -136,11 +207,13 @@ const Works = () => {
                     position,
                     productDes,
                     productName,
-                    buttonLink,
-                    buttonTitle,
+                    buttons,
                 } = item
                 const isStart = index % 2 === 0
-                const reverseStyle = isStart ? 'sm:flex-row' : 'sm:flex-row-reverse'
+                const reverseStyle = isStart
+                    ? 'sm:flex-row sm:items-center'
+                    : 'sm:flex-row-reverse sm:items-center'
+                const marginStyle = isStart ? 'sm:mr-12' : 'sm:ml-12'
                 return (
                     <div
                         key={productName}
@@ -151,6 +224,7 @@ const Works = () => {
                         <img
                             className={classNames(
                                 imageStyle,
+                                marginStyle,
                                 hoverAnim,
                                 hoverScale
                             )}
@@ -158,14 +232,32 @@ const Works = () => {
                             src={image}
                         />
                         <div className="flex flex-1 flex-col justify-center mt-4 sm:mt-0">
-                            <div className="flex text-gray-1 text-center sm:text-left font-bold text-xl">
+                            <div className="flex text-gray-1 text-center sm:text-left mt-4 sm:mt-0 font-bold text-xl">
                                 {`${companyName}  •  ${position}`}
                             </div>
-                            <div className="flex text-black text-center sm:text-left mt-2.5 text-3xl font-bold">
+                            <div className="flex text-black text-center sm:text-left mt-4 sm:mt-2.5 text-3xl font-bold">
                                 {productName}
                             </div>
                             <div className="flex text-gray-1 text-center sm:text-left text-xl mt-2.5">
                                 {productDes}
+                            </div>
+                            <div className="flex flex-wrap sm:flex-row mt-3 mb-4 sm:mb-0 justify-center sm:justify-start">
+                                {buttons.map(button => {
+                                    return (
+                                        <a
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            href={button.link}
+                                            key={`button-${productName}-${button.title}`}
+                                            className={classNames(
+                                                'transaction duration-500 group flex bg-gray-2 rounded-full h-12 px-4 min-w-min items-center justify-center mr-2 hover:bg-black mt-4'
+                                            )}>
+                                            <div className="transaction duration-500 flex text-black text-lg group-hover:text-white">
+                                                {button.title}
+                                            </div>
+                                        </a>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>
