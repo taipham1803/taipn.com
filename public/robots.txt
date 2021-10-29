@@ -1,4 +1,4 @@
-Sitemap: https://howlcity.io/api/sitemap.xml
+Sitemap: https://taipn.vercel.app/api/sitemap.xml
 User-agent: *
 Allow: /*
 

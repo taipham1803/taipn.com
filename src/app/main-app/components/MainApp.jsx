@@ -39,12 +39,12 @@ const MainApp = ({ Component, pageProps }) => {
         <>
             <NextSeo
                 title="taipn.com"
-                description="A meta-verse game based on blockchain technology"
+                description="Tai's personal website"
                 openGraph={{
                     url: 'https://taipn.com',
                     title: 'taipn.com',
                     description:
-                        'A meta-verse game based on blockchain technology',
+                        `Tai's personal website`,
                     images: [
                         {
                             url: 'taipn.com/avatar.jpg',
