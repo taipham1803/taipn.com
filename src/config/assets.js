@@ -3,7 +3,7 @@ const buttaLanding = './assets/buttaLanding.jpg'
 const emddiCover = './assets/emddiCover.jpg'
 const heydriverCover = './assets/heydriverCover.png'
 const mylocalAsimCover = './assets/mylocalAsimCover.png'
-const avatarCute = './assets/avatarCute.png'
+const avatar = './assets/avatar.png'
 
 export const images = {
   beeguruCover,
@@ -11,5 +11,5 @@ export const images = {
   emddiCover,
   heydriverCover,
   mylocalAsimCover,
-  avatarCute,
+  avatar,
 }

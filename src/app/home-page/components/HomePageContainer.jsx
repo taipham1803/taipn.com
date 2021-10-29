@@ -140,7 +140,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col sm:hidden self-center mt-16 items-center">
                 <div className="flex w-28 h-28">
-                    <img className="flex flex-1" src={images.avatarCute} />
+                    <img className="flex flex-1" src={images.avatar} />
                 </div>
                 <div className="flex text-white text-2xl font-light mt-6">
                     Hello, i’m Tai

@@ -38,18 +38,18 @@ const MainApp = ({ Component, pageProps }) => {
     return (
         <>
             <NextSeo
-                title="taipn.com"
+                title="taipn.vercel.app"
                 description="Tai's personal website"
                 openGraph={{
-                    url: 'https://taipn.com',
-                    title: 'taipn.com',
+                    url: 'https://taipn.vercel.app',
+                    title: 'taipn.vercel.app',
                     description:
                         `Tai's personal website`,
                     images: [
                         {
-                            url: 'taipn.com/avatar.jpg',
-                            width: 800,
-                            height: 600,
+                            url: 'taipn.vercel.app/avatar.png',
+                            width: 512,
+                            height: 512,
                             alt: 'Taipn portfolio',
                         },
                     ],
