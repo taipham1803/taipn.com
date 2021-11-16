@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import ScrollAnimation from 'react-animate-on-scroll'
 import Head from 'next/head'
 import { images } from 'config/assets'
@@ -242,7 +243,7 @@ const Works = () => {
                             <div className="flex text-gray-1 text-center sm:text-left mt-4 sm:mt-0 font-bold text-xl">
                                 {`${companyName}  •  ${position}`}
                             </div>
-                            <div className="flex text-black text-center sm:text-left mt-4 sm:mt-2.5 text-3xl font-bold">
+                            <div className="text-black text-center sm:text-left mt-4 sm:mt-2.5 text-3xl font-bold">
                                 {productName}
                             </div>
                             <div className="flex text-gray-1 text-center sm:text-left text-xl mt-2.5">
