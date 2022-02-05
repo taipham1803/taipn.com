@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import ScrollAnimation from 'react-animate-on-scroll'
 import Head from 'next/head'
@@ -125,30 +126,30 @@ const Home = () => {
         <div className="flex flex-1 flex-col w-full h-screen bg-black p-4 sm:p-9">
             <div className="flex flex-row justify-between mt-4 sm:mt-0">
                 <div className="flex flex-row items-center text-sm sm:text-xl justify-center w-full sm:w-auto">
-                    <div className={normalText}>{`Tai Pham`}</div>
+                    <p className={normalText}>{`Tai Pham`}</p>
                     <div className="text-white mx-1 sm:mx-2">|</div>
-                    <div className={normalText}>{`Frontend Developer`}</div>
+                    <p className={normalText}>{`Frontend Developer`}</p>
                     <div className="text-white mx-1 sm:mx-2">|</div>
-                    <div className={normalText}>{`UI/UX Designer`}</div>
+                    <p className={normalText}>{`UI/UX Designer`}</p>
                 </div>
                 <div className="flex-row items-center hidden sm:flex">
-                    <div className={normalText}>{`Works`}</div>
+                    <p className={normalText}>{`Works`}</p>
                     <div className="text-white mx-1 sm:mx-2">|</div>
-                    <div className={normalText}>{`Pet projects`}</div>
+                    <p className={normalText}>{`Pet projects`}</p>
                     <div className="text-white mx-1 sm:mx-2">|</div>
-                    <div className={normalText}>{`Experiments`}</div>
+                    <p className={normalText}>{`Experiments`}</p>
                 </div>
             </div>
             <div className="flex flex-col sm:hidden self-center mt-16 items-center">
                 <div className="flex w-28 h-28">
                     <img className="flex flex-1" src={images.avatar} />
                 </div>
-                <div className="flex text-white text-2xl font-light mt-6">
+                <p className="text-white text-2xl font-light mt-6">
                     Hello, i’m Tai
-                </div>
+                </p>
             </div>
             <div className="flex flex-1 flex-col justify-start sm:justify-center mt-12 sm:mt-0 pl-0 sm:pl-9">
-                <div className="text-white text-center sm:text-left text-3xl sm:text-5xl font-thin pr-0 sm:pr-36 sm:leading-tight leading-snug">
+                <p className="text-white text-center sm:text-left text-3xl sm:text-5xl font-thin pr-0 sm:pr-36 sm:leading-tight leading-snug">
                     I love humanize digital user experience, designing
                     mobile/web
                     <br />
@@ -158,7 +159,7 @@ const Home = () => {
                     </span>
                     <br />
                     and want to try <span className="font-bold">SwiftUI</span>
-                </div>
+                </p>
             </div>
             <div className="flex flex-row items-center ml-auto justify-center sm:justify-start w-full sm:w-auto">
                 <a
@@ -234,21 +235,21 @@ const Works = () => {
                                 hoverScale
                             )}>
                             <img
-                                className="flex flex-1"
+                                className="flex flex-1 object-cover rounded-xl"
                                 alt="product-cover"
                                 src={image}
                             />
                         </a>
                         <div className="flex flex-1 flex-col justify-center mt-4 sm:mt-0">
-                            <div className="flex text-gray-1 text-center sm:text-left mt-4 sm:mt-0 font-bold text-xl">
+                            <p className="text-gray-1 text-center sm:text-left mt-4 sm:mt-0 font-bold text-xl">
                                 {`${companyName}  •  ${position}`}
-                            </div>
-                            <div className="text-black text-center sm:text-left mt-4 sm:mt-2.5 text-3xl font-bold">
+                            </p>
+                            <p className="text-black text-center sm:text-left mt-4 sm:mt-2.5 text-3xl font-bold">
                                 {productName}
-                            </div>
-                            <div className="flex text-gray-1 text-center sm:text-left text-xl mt-2.5">
+                            </p>
+                            <p className="text-gray-1 text-center sm:text-left text-xl mt-2.5">
                                 {productDes}
-                            </div>
+                            </p>
                             <div className="flex flex-wrap sm:flex-row mt-3 mb-4 sm:mb-0 justify-center sm:justify-start">
                                 {buttons.map(button => {
                                     return (
@@ -260,9 +261,9 @@ const Works = () => {
                                             className={classNames(
                                                 'transaction duration-500 group flex bg-gray-2 rounded-full h-12 px-4 min-w-min items-center justify-center mr-2 hover:bg-black mt-4'
                                             )}>
-                                            <div className="transaction duration-500 flex text-black text-lg group-hover:text-white">
+                                            <p className="transaction duration-500 text-black text-lg group-hover:text-white">
                                                 {button.title}
-                                            </div>
+                                            </p>
                                         </a>
                                     )
                                 })}
